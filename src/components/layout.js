@@ -10,8 +10,12 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Navbar from "./reuseable/Navbar"
 import Header from "./header"
+import "./bootstrap.min.css"
 import "./layout.css"
-import "./bootstrap.css"
+import "bootstrap/dist/css/bootstrap.min.css";
+import "jquery/dist/jquery.min.js";
+import "popper.js/dist/popper.min";
+import "bootstrap/dist/js/bootstrap.min.js";
 
 const Layout = ({ children }) => (
   <div>

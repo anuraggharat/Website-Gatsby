@@ -1,28 +1,40 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Link } from "gatsby";
 
 export default class Navbar extends Component {
-    render() {
+    
+  // constructor(){
+  //   state={
+  //     navbarToggle:false
+  //     navbarClass:
+  //   }
+  // }
+
+  render() {
         return (
-<nav class="navbar navbar-expand-sm navbar-inverse bg-dark">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">WebSiteName</a>
+<nav className="navbar navbar-expand-sm navbar-inverse bg-transparent">
+  <div className="container-fluid">
+    <div className="navbar-header">
+
+      <Link to="/" className="navbar-brand">Website name</Link>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Page 2</a></li>
-        <li><a href="#">Page 3</a></li>
+    <div className="collapse navbar-collapse navbar-right" id="myNavbar">
+      <ul className="nav navbar-nav ml-auto">
+        <li className="active"><Link className="nav-link">Home</Link></li>
+        <li className="active"><Link className="nav-link">Shop</Link></li>
+        <li className="active"><Link className="nav-link">About</Link></li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
+      <button type="button" className="navbar-toggler text-dark" data-toggle="collapse" data-target="#myNavbar">
+        {/* <span className="icon-bar"></span>
+        <span className="icon-bar"></span>
+        <span className="icon-bar"></span> 
+                                */}
+                                Menu
+      </button>
+      {/* <ul className="nav navbar-nav navbar-right">
+        <li><a href="#"><span className="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span className="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul> */}
     </div>
   </div>
 </nav>
