@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Navbar from "./reuseable/Navbar"
+import Footer from "./reuseable/Footer"
 import Header from "./header"
 import "./bootstrap.min.css"
 import "./layout.css"
@@ -21,6 +22,7 @@ const Layout = ({ children }) => (
   <div>
     <Navbar />
     {children}
+    <Footer />
 
   </div>
 )
