@@ -1,5 +1,29 @@
+.body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.background-theme{
+    background-color: thistle;
+}
 .bgimage{
-    height: 500px;
-    width: 100vw;
-    background-color: black;
+    min-height: 100vh;
+    max-width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+nav{
+    position: absolute !important;
+    z-index: 1;
+    width: 100%;
+}
+.primarytextcolor{
+    color: white !important;
+}
+.cart-icon{
+    color: white;
 }
