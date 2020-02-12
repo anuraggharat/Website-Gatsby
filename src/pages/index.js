@@ -5,6 +5,7 @@ import HeroSection from "../components/reuseable/HeroSection"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import InfoBlock from "../components/reuseable/InfoBlock"
 
 const IndexPage = ({data}) => (
   <Layout>
@@ -14,7 +15,9 @@ const IndexPage = ({data}) => (
       title="Learn to write code"
       subtitle="Hello"
       heroclass="bgimage"
-/>
+    />
+    <InfoBlock 
+    heading="aboutus"/>
   </Layout>
 )
 export const query = graphql`
