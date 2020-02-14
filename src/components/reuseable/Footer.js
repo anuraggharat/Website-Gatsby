@@ -17,7 +17,15 @@ export default class Footer extends Component {
                                 <p className="mt-0 mb-0 ml-4">Email: ltoinstitution@gmail.com</p>
                                 </div>
                             </div>
-                            <div className="col-md-4"></div>
+                            <div className="col-md-4 pt-5">
+                                <ul className="list">
+                                    <li className="pt-0"><h2>Some Helpful Links</h2></li>
+                                    <li className="mt-4"><Link className="footer-link">Documentation</Link></li>
+                                    <li className="mt-3"><Link className="footer-link">Terms and Conditions</Link></li>
+                                    <li className="mt-3"><Link className="footer-link">Start Teaching with us?</Link></li>
+                                    <li className="mt-3"><Link className="footer-link">Subscribe us!</Link></li>
+                                </ul>
+                            </div>
                             <div className="col-md-4"></div>
                         </div>
                     </div>
