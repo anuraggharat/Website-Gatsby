@@ -41,11 +41,13 @@ nav{
 }
 .footer-link{
     text-decoration: none;
-    color: white;
+    color: gray;
+    font-weight: 600;
+    font-size: 1.2rem;
 }
 .footer-link:hover{
     text-decoration: none;
-    color: white;
+    color: #00b422;
 }
 .list-group-item{
     background-color: transparent;
@@ -55,5 +57,11 @@ nav{
 }
 .social-media-icon{
     font-size: 40px;
-    color: white;
+    color: #666666 ;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+.social-media-icon:hover{
+    color:#00b422;
+    transition: all .5s ease;
 }

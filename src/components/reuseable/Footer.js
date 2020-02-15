@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import { Link } from "gatsby"
-import { FaInstagram,FaGithub,Fafacebook,FaLinkedin } from "react-icons/fa"
+import { FaInstagram,FaGithub,FaFacebook,FaLinkedin} from "react-icons/fa"
 import logo from "../../images/gatsby-icon.png"
 export default class Footer extends Component {
     render() {
         return (
-                <footer className="container-fluid no-pad no-mar bg-secondary">
+                <footer className="container-fluid no-pad no-mar bg-white">
                     <div className="container-fluid no-pad no-mar">
                         <div className="row no-pad no-mar ">
-                            <div className="col-md-4 text-center pt-5 text-white pb-5">
+                            <div className="col-md-4 text-center pt-5 text-gray pb-5">
                                 <img className="footer-logo" src={logo} width="50px" height="50px"></img>
                                 <h4 className="text-white mt-2">LTO Institution Pvt.Ltd .</h4>
                                 <p>Coding made easy.</p>
@@ -18,7 +18,7 @@ export default class Footer extends Component {
                                 <p className="mt-0 mb-0 ml-4">Email: ltoinstitution@gmail.com</p>
                                 </div>
                             </div>
-                            <div className="col-md-4 pt-5">
+                            <div className="col-md-4 pt-5 text-gray">
                                 <ul className="list">
                                     <li className="pt-0"><h2>Helpful Links</h2></li>
                                     <li className="mt-4"><Link className="footer-link">Documentation</Link></li>
@@ -33,10 +33,10 @@ export default class Footer extends Component {
                                 </div>
                                 <div className="container-fluid">
                                     <ul className="list-group list-group-horizontal social-media-list">
-                                        <li className="list-group-item"><FaInstagram className="social-media-icon"></FaInstagram></li>
-                                        <li className="list-group-item"><FaInstagram className="social-media-icon"></FaInstagram></li>
-                                        <li className="list-group-item"><FaInstagram className="social-media-icon"></FaInstagram></li>
-                                        <li className="list-group-item"><FaInstagram className="social-media-icon"></FaInstagram></li>
+                                        <li className="list-group-item"><FaInstagram className="social-media-icon" /></li>
+                                        <li className="list-group-item"><FaFacebook className="social-media-icon" /></li>
+                                        <li className="list-group-item"><FaLinkedin className="social-media-icon" /></li>
+                                        <li className="list-group-item"><FaGithub className="social-media-icon" /></li>
                                     </ul>
                                     
                                 </div>
