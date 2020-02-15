@@ -43,3 +43,17 @@ nav{
     text-decoration: none;
     color: white;
 }
+.footer-link:hover{
+    text-decoration: none;
+    color: white;
+}
+.list-group-item{
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    margin: 0px;
+}
+.social-media-icon{
+    font-size: 40px;
+    color: white;
+}

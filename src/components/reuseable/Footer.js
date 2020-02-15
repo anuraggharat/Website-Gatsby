@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from "gatsby"
+import { FaInstagram,FaGithub,Fafacebook,FaLinkedin } from "react-icons/fa"
 import logo from "../../images/gatsby-icon.png"
 export default class Footer extends Component {
     render() {
@@ -19,14 +20,27 @@ export default class Footer extends Component {
                             </div>
                             <div className="col-md-4 pt-5">
                                 <ul className="list">
-                                    <li className="pt-0"><h2>Some Helpful Links</h2></li>
+                                    <li className="pt-0"><h2>Helpful Links</h2></li>
                                     <li className="mt-4"><Link className="footer-link">Documentation</Link></li>
                                     <li className="mt-3"><Link className="footer-link">Terms and Conditions</Link></li>
                                     <li className="mt-3"><Link className="footer-link">Start Teaching with us?</Link></li>
                                     <li className="mt-3"><Link className="footer-link">Subscribe us!</Link></li>
                                 </ul>
                             </div>
-                            <div className="col-md-4"></div>
+                            <div className="col-md-4 pt-5">
+                                <div className="container-fluid">
+                                    <h2>Connect with us:</h2>                                    
+                                </div>
+                                <div className="container-fluid">
+                                    <ul className="list-group list-group-horizontal social-media-list">
+                                        <li className="list-group-item"><FaInstagram className="social-media-icon"></FaInstagram></li>
+                                        <li className="list-group-item"><FaInstagram className="social-media-icon"></FaInstagram></li>
+                                        <li className="list-group-item"><FaInstagram className="social-media-icon"></FaInstagram></li>
+                                        <li className="list-group-item"><FaInstagram className="social-media-icon"></FaInstagram></li>
+                                    </ul>
+                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="container-fluid credits text-center pt-5 pb-2 bg-dark"> 
