@@ -18,7 +18,10 @@ const IndexPage = ({data}) => (
       heroclass="abouthero"
     />
     <InfoBlock 
-    heading="aboutus"/>
+    heading="Learn To Code"
+    details="LearnCodeOnline is a platform to learn programming with high quality videos at affordable price.It is a platform to enhance your coding skills and be up-to-date with latest technologies and skills.LTO as we call it, was 
+    started in 2015 by two of our founders Hitesh Chaudhary and Anurag Gharat.From being a Youtube Tutorails Channel to a Online learning based startup we have come a long way. Now we suppy Certification Courses as well as arrange Tech-Talks."
+    />
     <Aboutpeople />
   </Layout>
 )

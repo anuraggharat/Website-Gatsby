@@ -76,3 +76,7 @@ nav{
     flex-direction: column;
     color: white;   
 }
+.main-hero>.col-md-6>img{
+    height:100%;
+    width:70%;
+}
