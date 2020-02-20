@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    background-color:white;
 }
 .no-pad{
     padding: 0px !important;
@@ -79,4 +80,7 @@ nav{
 .main-hero>.col-md-6>img{
     height:100%;
     width:70%;
+}
+.instructor-img{
+    height: 150px;
 }

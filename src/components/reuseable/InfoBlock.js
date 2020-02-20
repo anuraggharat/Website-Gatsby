@@ -6,7 +6,7 @@ export default function InfoBlock({heading,details}) {
             <Heading
             title={heading} 
             />
-            <p className="text">{details}</p>
+            <p className="text mt-4 lead">{details}</p>
             
         </div>
     )
