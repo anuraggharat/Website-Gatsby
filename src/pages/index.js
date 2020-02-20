@@ -16,8 +16,8 @@ const IndexPage = ({data}) => (
       subtitle="Hello"
       heroclass="bgimage"
     />
-    <InfoBlock 
-    heading="aboutus"/>
+    {/* <InfoBlock 
+    heading="aboutus"/> */}
   </Layout>
 )
 export const query = graphql`

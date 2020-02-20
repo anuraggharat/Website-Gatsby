@@ -5,7 +5,7 @@ import logo from "../../images/gatsby-icon.png"
 export default class Footer extends Component {
     render() {
         return (
-                <footer className="mt-5 container-fluid no-pad bg-secondary">
+                <footer className="mt-5 container-fluid no-pad bg-light">
                     <div className="container-fluid no-pad no-mar">
                         <div className="row no-pad no-mar ">
                             <div className="col-md-4 text-center pt-5 text-gray pb-5">
