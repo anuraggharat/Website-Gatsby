@@ -9,12 +9,9 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-scroll-reveal`,
+    resolve: `gatsby-plugin-scroll-reveal`,
     options: {
-        threshold: 1, // Percentage of an element's area that needs to be visible to launch animation
-        once: false, // Defines if animation needs to be launched once
-        disable: false, // Flag for disabling animations
-        
+        threshold: 1, // Percentage of an element's area that needs to be visible to launch animation        
         // Advanced Options
         selector: '[data-sal]', // Selector of the elements to be animated
         animateClassName: 'sal-animate', // Class name which triggers animation
@@ -23,7 +20,7 @@ module.exports = {
         enterEventName: 'sal:in', // Enter event name
         exitEventName: 'sal:out', // Exit event name
     }
-    }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -53,8 +50,12 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    {
+    resolve: 'gatsby-plugin-snipcart',
+			options: {
+        apiKey:process.env.SNIPKART_KEY, 
+        autopop:true
+      }
+    }
   ],
 }

@@ -16,9 +16,7 @@ const IndexPage = ({data}) => (
       title="Learn to write code"
       subtitle="Hello"
       heroclass="bgimage"
-    />
-    <InfoBlock 
-    heading="aboutus"/> 
+    />  
     <CoursesCart 
     courses={data.courses}
     />
