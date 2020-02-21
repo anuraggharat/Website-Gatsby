@@ -16,8 +16,8 @@ const IndexPage = ({data}) => (
       subtitle="Hello"
       heroclass="bgimage"
     />
-    {/* <InfoBlock 
-    heading="aboutus"/> */}
+    <InfoBlock 
+    heading="aboutus"/> 
   </Layout>
 )
 export const query = graphql`
@@ -26,6 +26,26 @@ export const query = graphql`
     childImageSharp {
       fluid(quality: 90, maxWidth: 1920) {
         ...GatsbyImageSharpFluid_tracedSVG
+      }
+    }
+  }
+  mycourses:allContentfulCourses{
+    edges{
+      node{
+        id
+        title
+        category
+        price
+        description {
+          id
+          description
+        }
+        image{
+          title
+          fixed(width:200,height:200){
+							src
+          }
+        }
       }
     }
   }
