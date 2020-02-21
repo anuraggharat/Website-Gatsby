@@ -5,7 +5,8 @@ export default function aboutpeople() {
         <div className="container-fluid bg-white">
         <div className="container bg-light mt-5 py-5">
             <div className="main-hero row px-auto bg-light pt-3 pb-3">
-                <div className="col-md-6 px-auto text-center rounded">
+                <div className="col-md-6 px-auto text-center rounded"   data-sal="slide-up" data-sal-delay="500"
+  data-sal-easing="ease">
                     <img src="https://images.pexels.com/photos/879109/pexels-photo-879109.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" 
                     className="img-circle"
                     />

@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import InfoBlock from "../components/reuseable/InfoBlock"
+import CoursesCart from "../components/Cart/coursescart"
 
 const IndexPage = ({data}) => (
   <Layout>
@@ -18,7 +19,11 @@ const IndexPage = ({data}) => (
     />
     <InfoBlock 
     heading="aboutus"/> 
+    <CoursesCart 
+    courses={data.courses}
+    />
   </Layout>
+
 )
 export const query = graphql`
 {
@@ -29,7 +34,7 @@ export const query = graphql`
       }
     }
   }
-  mycourses:allContentfulCourses{
+  courses:allContentfulCourses{
     edges{
       node{
         id
@@ -41,9 +46,8 @@ export const query = graphql`
           description
         }
         image{
-          title
-          fixed(width:200,height:200){
-							src
+          fixed(width:400,height:200){
+            ...GatsbyContentfulFixed_tracedSVG
           }
         }
       }
