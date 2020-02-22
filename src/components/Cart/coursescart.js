@@ -16,22 +16,28 @@ export default class coursescart extends Component {
         return (
             <div className="container d-flex-row justify-content-start no-pad">
             <div className="row d-flex justify-content-center no-pad mt-5">
-            <Heading title="Our Latest Courses"></Heading>
+            <Heading title="OUR LATEST COURSES"></Heading>
             </div>
             
-                <div className="row pt-3 pb-5">
+                <div className="row pt-3 pb-5 text-center justify-content-around">
                     {this.state.courses.map(({node})=>{
                         return(
-                        <div className="col-6 d-flex justify-content-center mt-5"                             
+                        <div className="col-5 mt-5 pt-4 pb-4 d-flex flex-column text-center bg-first single-course"                             
                         data-sal="slide-down"
                         data-sal-delay="500"
                         data-sal-easing="ease">
                         <Link><Img
                             fixed={node.image.fixed}
                             id={node.id}
-                            className="single-course"
+                            
 
-                            /></Link>     
+                            />
+                        </Link>
+                        <div className="d-flex flex-row justify-content-between mt-3 font-weight-bold" >
+                            <h3 className="course-name ml-4 text-dark">{node.title}</h3>
+                            <button className="btn btn-success btn-rounded course-price px-4 w-25 mr-4 font-weight-bold">{node.price}$</button>
+                        </div>
+                        
                         </div>
 
                    )
