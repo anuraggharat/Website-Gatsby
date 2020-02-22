@@ -35,7 +35,13 @@ export default class coursescart extends Component {
                         </Link>
                         <div className="d-flex flex-row justify-content-between mt-3 font-weight-bold" >
                             <h3 className="course-name ml-4 text-dark">{node.title}</h3>
-                            <button className="btn btn-success btn-rounded course-price px-4 w-25 mr-4 font-weight-bold">{node.price}$</button>
+                            <button className="btn btn-success btn-rounded course-price px-4 w-25 mr-4 font-weight-bold snipcart-add-item"
+                            data-item-id={node.id}
+                            data-item-name={node.title}
+                            data-item-price={node.price}
+                            data-item-url="https://courses.learncodeonline.in/"
+                            data-item-image={node.image.fixed.src}
+                            >{node.price}$</button>
                         </div>
                         
                         </div>

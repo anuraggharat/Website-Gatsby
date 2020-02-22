@@ -53,7 +53,7 @@ module.exports = {
     {
     resolve: 'gatsby-plugin-snipcart',
 			options: {
-        apiKey:process.env.SNIPKART_KEY, 
+        apiKey:process.env.SNIPCART_KEY, 
         autopop:true
       }
     }
