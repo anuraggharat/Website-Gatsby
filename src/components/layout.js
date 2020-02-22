@@ -13,10 +13,10 @@ import Footer from "./reuseable/Footer"
 import Header from "./header"
 import "./bootstrap.min.css"
 import "./layout.css"
-import "bootstrap/dist/css/bootstrap.min.css";
-import "jquery/dist/jquery.min.js";
-import "popper.js/dist/popper.min";
-import "bootstrap/dist/js/bootstrap.min.js";
+// import "bootstrap/dist/css/bootstrap.min.css";
+// import "jquery/dist/jquery.min.js";
+// import "popper.js/dist/popper.min";
+// import "bootstrap/dist/js/bootstrap.min.js";
 
 const Layout = ({ children }) => (
   <div>
