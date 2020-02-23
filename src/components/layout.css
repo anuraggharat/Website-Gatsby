@@ -99,3 +99,10 @@ nav{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: .5s ease;
 }
+.why-card:hover{
+    transform:scale(1.1);
+    transition: 1s linear;
+}
+.why-card>p{
+    font-size: 1.2rem;
+}
