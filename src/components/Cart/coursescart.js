@@ -3,14 +3,45 @@ import Img from 'gatsby-image'
 import { Link } from 'gatsby'
 import InfoBlock from '../reuseable/InfoBlock'
 import Heading from '../reuseable/Heading'
+
+
+const getCategories = items =>{
+    let holditems = items.map(items =>{
+        return items.node.category   
+    })
+    let holdCategory = new Set(holditems)
+    let categories = Array.from(holdCategory)
+    categories = ["ALL",...categories]
+   
+    return categories
+}
+
 export default class coursescart extends Component {
     constructor(props){
         super(props)
         this.state={
             courses:props.courses.edges,
-            choicecourses:props.courses.edges
+            choicecourses:props.courses.edges,
+            mycategories:getCategories(props.courses.edges)
+        }       
+    }
+    showCategory = category =>{
+        let allCourses = [...this.state.courses]
+        if(category==="ALL"){
+        this.setState(()=>{
+            return {choicecourses:allCourses}
+        })
+        }
+        else{
+            let singlecatcourse = allCourses.filter(({node})=>
+            node.category === category )
+            this.setState(()=>{
+                return {choicecourses:singlecatcourse}
+            })
         }
     }
+
+    
    
     render() {
         return (
@@ -20,7 +51,13 @@ export default class coursescart extends Component {
             </div>
             
                 <div className="row pt-3 pb-5 text-center justify-content-around">
-                    {this.state.courses.map(({node})=>{
+                    <div className=" container row d-flex flex-row bg-dark py-2">
+                        {this.state.mycategories.map((category,index) =>{
+                            return(<button className="btn btn-light" key={index} onClick={()=>this.showCategory(category)}>{category}</button>)
+                            
+                        })}
+                    </div>
+                    {this.state.choicecourses.map(({node})=>{
                         return(
                         <div className="col-5 mt-5 pt-4 pb-4 d-flex flex-column text-center bg-first single-course"                             
                         data-sal="slide-down"

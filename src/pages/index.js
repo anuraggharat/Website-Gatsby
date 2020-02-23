@@ -1,11 +1,8 @@
 import React from "react"
 import { graphql} from 'gatsby'
-import { Link } from "gatsby"
 import HeroSection from "../components/reuseable/HeroSection"
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
-import InfoBlock from "../components/reuseable/InfoBlock"
 import CoursesCart from "../components/Cart/coursescart"
 
 const IndexPage = ({data}) => (

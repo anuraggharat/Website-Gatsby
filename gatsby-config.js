@@ -12,7 +12,7 @@ module.exports = {
     resolve: `gatsby-plugin-scroll-reveal`,
     options: {
         threshold: 1, // Percentage of an element's area that needs to be visible to launch animation        
-        // Advanced Options
+        once:true,// Advanced Options
         selector: '[data-sal]', // Selector of the elements to be animated
         animateClassName: 'sal-animate', // Class name which triggers animation
         disabledClassName: 'sal-disabled', // Class name which defines the disabled state
