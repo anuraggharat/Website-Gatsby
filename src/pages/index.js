@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Infoblock from "../components/reuseable/InfoBlock"
 import CoursesCart from "../components/Cart/coursescart"
-
+import Whyus from '../components/reuseable/Whyus'
 const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" />
@@ -15,7 +15,8 @@ const IndexPage = ({data}) => (
       subtitle="Hello"
       heroclass="bgimage"
     /> 
-    <Infoblock /> 
+    <Infoblock />
+    <Whyus /> 
     <CoursesCart 
     courses={data.courses}
     />
