@@ -51,9 +51,9 @@ export default class coursescart extends Component {
             </div>
             
                 <div className="row pt-3 pb-5 text-center justify-content-around">
-                    <div className=" container row d-flex flex-row bg-dark py-2">
+                    <div className=" container row d-flex flex-row justify-content-between py-2">
                         {this.state.mycategories.map((category,index) =>{
-                            return(<button className="btn btn-light" key={index} onClick={()=>this.showCategory(category)}>{category}</button>)
+                            return(<button className="btn-outline-primary btn py-2 px-4" key={index} onClick={()=>this.showCategory(category)}>{category}</button>)
                             
                         })}
                     </div>
@@ -61,8 +61,8 @@ export default class coursescart extends Component {
                         return(
                         <div className="col-5 mt-5 pt-4 pb-4 d-flex flex-column text-center bg-first single-course"                             
                         data-sal="slide-down"
-                        data-sal-delay="500"
-                        data-sal-easing="ease">
+                        data-sal-delay="400"
+                        data-sal-easing="ease-in">
                         <Link><Img
                             fixed={node.image.fixed}
                             id={node.id}

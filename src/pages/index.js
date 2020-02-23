@@ -3,6 +3,7 @@ import { graphql} from 'gatsby'
 import HeroSection from "../components/reuseable/HeroSection"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Infoblock from "../components/reuseable/InfoBlock"
 import CoursesCart from "../components/Cart/coursescart"
 
 const IndexPage = ({data}) => (
@@ -13,7 +14,8 @@ const IndexPage = ({data}) => (
       title="Learn to write code"
       subtitle="Hello"
       heroclass="bgimage"
-    />  
+    /> 
+    <Infoblock /> 
     <CoursesCart 
     courses={data.courses}
     />
