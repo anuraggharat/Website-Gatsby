@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import Infoblock from "../components/reuseable/InfoBlock"
 import CoursesCart from "../components/Cart/coursescart"
 import Whyus from '../components/reuseable/Whyus'
+import Certification from "../components/reuseable/Certification"
 const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" />
@@ -17,6 +18,7 @@ const IndexPage = ({data}) => (
     /> 
     <Infoblock />
     <Whyus /> 
+    <Certification />
     <CoursesCart 
     courses={data.courses}
     />
