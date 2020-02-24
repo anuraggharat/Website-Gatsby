@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { FaReact,FaVuejs,FaLaravel, FaAngular } from 'react-icons/Fa'
+import { FaReact,FaVuejs,FaLaravel, FaAngular } from 'react-icons/fa'
 import { DiDjango} from 'react-icons/di'
 export default class Frameworks extends Component {
     render() {
