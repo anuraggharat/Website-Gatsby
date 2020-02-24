@@ -8,15 +8,15 @@ export default class Navbar extends Component {
     menus:[{
       id:1,
       name:"home",
-      url:"/",
+      url:"",
     },{
       id:1,
       name:"about",
-      url:"/",
+      url:"about",
     },{
       id:3,
       name:"contact",
-      url:"/",}
+      url:"/contact",}
     ]
   }
 
@@ -36,7 +36,7 @@ export default class Navbar extends Component {
               <ul className="nav navbar-nav ml-auto primarytextcolor">
               {this.state.menus.map(menu=>{
                 return(
-                <li className="active mr-4 capitalize" id="{menu.id}"><Link className="nav-link primarytextcolor" to="{menu.url}">{menu.name}</Link></li>
+                <li className="active mr-4 capitalize" id="{menu.id}"><Link className="nav-link primarytextcolor" to="menu.url">{menu.name}</Link></li>
                 )
 
               })}

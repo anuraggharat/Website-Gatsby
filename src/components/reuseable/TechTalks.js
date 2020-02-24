@@ -1,7 +1,4 @@
 import React from 'react'
-import Herosection from './HeroSection'
-import BackgroundImage from 'gatsby-background-image';
-import img from "../../images/heroindex.jpg"
 import { FiSend } from "react-icons/fi";
 export default function TechTalks() {
     return (
