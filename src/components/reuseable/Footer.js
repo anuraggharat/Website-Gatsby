@@ -10,7 +10,7 @@ export default class Footer extends Component {
                         <div className="row no-pad no-mar ">
                             <div className="col-md-4 text-center pt-5 text-gray pb-5">
                                 <img className="footer-logo" src={logo} width="50px" height="50px"></img>
-                                <h4 className="text-white mt-2">LTO Institution Pvt.Ltd .</h4>
+                                <h4 className="text-primary mt-2">LTO Institution Pvt.Ltd .</h4>
                                 <p>Coding made easy.</p>
                                 <div className="container-fluid text-left pl-5" >
                                 <p className="mt-0 mb-0 ml-4">201 Skyparidise,Nerul,Navi-Mumbai.</p>

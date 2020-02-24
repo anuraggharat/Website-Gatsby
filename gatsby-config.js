@@ -3,9 +3,9 @@ require('dotenv').config({
 })
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Learn To Code`,
+    description: `A website to test my frontend skills`,
+    author: `anuraggharat`,
   },
   plugins: [
     {
@@ -13,6 +13,7 @@ module.exports = {
     options: {
         threshold: 1, // Percentage of an element's area that needs to be visible to launch animation        
         once:true,// Advanced Options
+        disable:false,
         selector: '[data-sal]', // Selector of the elements to be animated
         animateClassName: 'sal-animate', // Class name which triggers animation
         disabledClassName: 'sal-disabled', // Class name which defines the disabled state
