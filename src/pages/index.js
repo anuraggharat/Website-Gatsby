@@ -8,6 +8,7 @@ import CoursesCart from "../components/Cart/coursescart"
 import Whyus from '../components/reuseable/Whyus'
 import Certification from "../components/reuseable/Certification"
 import Techtalks from "../components/reuseable/TechTalks"
+import Frameworks from "../components/reuseable/Frameworks"
 const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" />
@@ -19,6 +20,7 @@ const IndexPage = ({data}) => (
     /> 
     <Infoblock />
     <Whyus /> 
+    <Frameworks />
     <Certification />
     <Techtalks />
     <CoursesCart 

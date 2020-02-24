@@ -146,3 +146,17 @@ nav{
     background-color: rgba(168, 178, 231, 0.8);
     z-index: 1;
 }
+.framecard{
+    width: 150px;
+    padding: 20px 50px;
+    background-color: #ffffff;
+}
+.frameicon{
+    font-size: 50px;
+}
+@media only screen and (max-width: 720px) {
+    /* For mobile phones: */
+    .navbar-header{
+      width: 100%;
+    }
+  }
