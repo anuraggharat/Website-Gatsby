@@ -7,6 +7,7 @@ import Infoblock from "../components/reuseable/InfoBlock"
 import CoursesCart from "../components/Cart/coursescart"
 import Whyus from '../components/reuseable/Whyus'
 import Certification from "../components/reuseable/Certification"
+import Techtalks from "../components/reuseable/TechTalks"
 const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" />
@@ -19,6 +20,7 @@ const IndexPage = ({data}) => (
     <Infoblock />
     <Whyus /> 
     <Certification />
+    <Techtalks />
     <CoursesCart 
     courses={data.courses}
     />
