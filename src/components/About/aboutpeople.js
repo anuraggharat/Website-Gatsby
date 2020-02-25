@@ -1,4 +1,5 @@
 import React from 'react'
+import Heading from '../reuseable/Heading'
 
 export default function aboutpeople() {
     return (
@@ -16,9 +17,10 @@ export default function aboutpeople() {
                     <p className="lead mt-3">I am the CEO and Chief trainer in Learn To Code.I'll be helping you in this beautiful journey to learn to code.Start your beautiful journey in learning to code with us.We have the best Instructors available for you. Our content creators create the best videos for you student to help you all to learn interactively.</p>
                 </div>
             </div>
-            <div className="container-fluid justify-content-center text-center mt-5">
-            <h1 className="heading mb-5 text-uppercase">Know Your Instructors</h1>     
+            <div className="container-fluid justify-content-center text-center mt-5 mb-5">
+            <Heading title="Know Your Instructors"/>     
             </div>
+          
         <div className="row">
             <div className="col-sm-3">
                 <div className="card">

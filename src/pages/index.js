@@ -9,6 +9,7 @@ import Whyus from '../components/reuseable/Whyus'
 import Certification from "../components/reuseable/Certification"
 import Techtalks from "../components/reuseable/TechTalks"
 import Frameworks from "../components/reuseable/Frameworks"
+import img from "../images/coding.png"
 const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" />
@@ -18,7 +19,11 @@ const IndexPage = ({data}) => (
       subtitle="Ready to kickstart your coding journey?"
       heroclass="bgimage"
     /> 
-    <Infoblock />
+        <Infoblock 
+        heading="Get career ready with courses specially designed with Industry approach."
+        details="At LearnToCode.com , we try to bring latest courses to students so that they can stand out in crowd. Not only that we provide a dedicated team to answer your questions."
+        img={img}
+    />
     <Whyus /> 
     <Frameworks />
     <Certification />
