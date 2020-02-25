@@ -59,7 +59,7 @@ export default class coursescart extends Component {
                     </div>
                     {this.state.choicecourses.map(({node})=>{
                         return(
-                        <div className="col-5 mt-5 pt-4 pb-4 d-flex flex-column text-center bg-first single-course"                             
+                        <div className="col-5 mt-5 pt-4 pb-4 d-flex flex-column text-center bg-light single-course shadow-lg"                             
                         data-sal="slide-down"
                         data-sal-delay="400"
                         data-sal-easing="ease-in">

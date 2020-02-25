@@ -10,11 +10,41 @@
 .no-mar{
     margin: 0px !important;
 }
-.background-theme{
-    background-color: thistle;
-}
 .bg-first{
-    background-color: #ecf0f1;
+    background-color: #68E1FD;
+}
+.bg-second{
+    background-color: #4834DF ;
+}
+.bg-third{
+    background-color: #DAE0E2;
+}
+.text-first{
+    color: #68E1FD;
+}
+.text-second{
+    color: #4834DF;
+}
+ .btn-first{
+    border:1px solid #4834DF;
+    color:#4834DF;
+    font-weight: 600;
+}
+.btn-first:hover{
+    background-color:#68E1FD;
+    border: none;
+    border:1px solid #68E1FD;
+}
+.btn-second{
+    border:1px solid #ffffff;
+    color:#fff;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.btn-second:hover{
+    background-color:#4834DF;
+    border: none;
+    border:1px solid #4834DF;
 }
 .btn-round{
     border-radius: 20% !important;
@@ -67,8 +97,17 @@ nav{
     text-transform: uppercase;
     font-weight: 400;
 }
+.nav-link:hover{
+    color: #4834DF !important;
+}
+.menu-icon{
+    font-size: 1.5rem;
+    color:black;
+    margin: 2px;
+}
 .primarytextcolor{
     color: white !important;
+    font-weight: 600;
 }
 .cart-icon{
     color: white;
@@ -82,9 +121,13 @@ nav{
     font-weight: 600;
     font-size: 1.2rem;
 }
+.footer-logo{
+    font-size: 50px;
+    color: #4834DF;
+}
 .footer-link:hover{
     text-decoration: none;
-    color: #00b422;
+    color: #4834DF;
 }
 .list-group-item{
     background-color: transparent;
@@ -99,7 +142,7 @@ nav{
     margin-top: 10px;
 }
 .social-media-icon:hover{
-    color:#00b422;
+    color:#68E1FD;
     transition: all .5s ease;
 }
 /* Styles for about page */
@@ -138,21 +181,28 @@ nav{
     position: relative;
     background-image: url("https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
     background-position: center;
-    background-size: cover;
+    background-size: cover;    
 }
 .techtalks-text{
     width: 100%;
     height: 75vh;
-    background-color: rgba(168, 178, 231, 0.8);
+    background-color: rgba(104, 225, 253, 0.8);
     z-index: 1;
 }
 .framecard{
     width: 150px;
     padding: 20px 50px;
     background-color: #ffffff;
+    transition: 1s ;
+}
+.framecard:hover{
+    background-color: #fafafa;
+    transform: scale(1.5,1.5);
+    transition: .7s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 .frameicon{
     font-size: 50px;
+    margin-bottom: 15px;
 }
 @media only screen and (max-width: 720px) {
     /* For mobile phones: */

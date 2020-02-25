@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from "gatsby";
 import { FaShoppingCart } from "react-icons/fa";
 import { FaLaptopCode } from "react-icons/fa"
+import { FiMenu } from "react-icons/fi"
 
 export default class Navbar extends Component {
     
@@ -32,8 +33,8 @@ export default class Navbar extends Component {
             <div className="navbar-header">
 
               <Link to="/" className="navbar-brand text-white bg-dark px-3 py-2 websitename"><FaLaptopCode className="icon mb-1 mr-2"/>LearnToCode</Link>
-              <button type="button" className="navbar-toggler ml-5 float-right" data-toggle="collapse" data-target="#myNavbar">
-                <span className="navbar-toggler-icon text-white border"></span>
+              <button type="button" className="navbar-toggler ml-5 float-right bg-dark display-1" data-toggle="collapse" data-target="#myNavbar">
+                <FiMenu className="bg-dark text-white menu-icon"/>
               </button>
               
             </div>

@@ -4,23 +4,40 @@ import { DiDjango} from 'react-icons/di'
 export default class Frameworks extends Component {
     render() {
         return (
-            <div className="container-fluid bg-light">
-                <h1>One stop location to learn all Web frameworks!</h1>
+            <div className="container-fluid bg-light pb-5">
+                <h1 className="text-center text-bold mb-5 text-second">One stop location to learn all Web frameworks!</h1>
                 <div className="container d-flex flex-row mx-auto bg-light justify-content-around">
-                    <div className="framecard d-flex flex-column">
-                        <FaLaravel className="frameicon"/>
-                        Laravel
+                    <div className="framecard d-flex flex-column shadow"
+                                                    data-sal="fade"
+                                                    data-sal-delay="600"
+                                                    data-sal-easing="ease">
+                        <FaLaravel className="frameicon text-first"/>
+                        <p className="text-center text-second ">Laravel</p>
                     </div>
-                    <div className="framecard d-flex flex-column">
-                        <FaVuejs  className="frameicon"/>
-                        Vue.js
+                    <div className="framecard d-flex flex-column shadow "
+                        data-sal="fade"
+                        data-sal-delay="700"
+                        data-sal-easing="ease">
+                        <FaVuejs  className="frameicon text-first"/>
+                        <p className="text-center text-second">Vue.js</p>
+                        
                     </div>
-                    <div className="framecard d-flex flex-column">
-                        <FaReact  className="frameicon"/>React.js</div>
-                    <div className="framecard d-flex flex-column "><FaAngular  className="frameicon"/>
-                    Angular 2</div>
-                    <div className="framecard d-flex flex-column"><DiDjango  className="frameicon"/>
-                    Django</div>
+                    <div className="framecard d-flex flex-column shadow"
+                        data-sal="fade"
+                        data-sal-delay="800"
+                        data-sal-easing="ease">
+                        <FaReact  className="frameicon text-first"/>
+                        <p className="text-center text-second">React.js</p></div>
+                    <div className="framecard d-flex flex-column shadow"
+                    data-sal="fade"
+                    data-sal-delay="900"
+                    data-sal-easing="ease"><FaAngular  className="frameicon text-first"/>
+                    <p className="text-center text-second">Angular2</p></div>
+                    <div className="framecard d-flex flex-column shadow"
+                                            data-sal="fade"
+                                            data-sal-delay="1000"
+                                            data-sal-easing="ease"><DiDjango  className="frameicon text-first"/>
+                    <p className="text-center text-second">Django</p></div>
                 </div>
             </div>
         )
