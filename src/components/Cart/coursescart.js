@@ -51,12 +51,13 @@ export default class coursescart extends Component {
             </div>
             
                 <div className="row pt-3 pb-5 text-center justify-content-around">
-                    <div className=" container row d-flex flex-row justify-content-between py-2">
+                    <div className="container  row d-flex flex-row justify-content-between py-2">
                         {this.state.mycategories.map((category,index) =>{
                             return(<button className="btn-outline-primary btn py-2 px-4" key={index} onClick={()=>this.showCategory(category)}>{category}</button>)
                             
                         })}
                     </div>
+                    <div className="allcourses container-fluid row d-flex justify-content-around bg-dark">
                     {this.state.choicecourses.map(({node})=>{
                         return(
                         <div className="col-5 mt-5 pt-4 pb-4 d-flex flex-column text-center bg-light single-course shadow-lg"                             
@@ -67,7 +68,7 @@ export default class coursescart extends Component {
                             fixed={node.image.fixed}
                             id={node.id}
                             
-
+                            className="course-image"
                             />
                         </Link>
                         <div className="d-flex flex-row justify-content-between mt-3 font-weight-bold" >
@@ -85,6 +86,8 @@ export default class coursescart extends Component {
 
                    )
                          })}
+                    </div>
+                    
                     
                 </div>
                 
