@@ -23,7 +23,7 @@ export default function aboutpeople() {
           
         <div className="row">
             <div className="col-sm-3">
-                <div className="card">
+                <div className="card single-instructors">
                     <img
                     src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
                     className="card-img-top instructor-img img-rounded"
@@ -39,7 +39,7 @@ export default function aboutpeople() {
                 </div>
             </div>
             <div className="col-sm-3">
-                <div className="card">
+                <div className="card single-instructors">
                     <img
                     src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
                     className="card-img-top instructor-img img-rounded"
@@ -55,7 +55,7 @@ export default function aboutpeople() {
                 </div>
             </div>
             <div className="col-sm-3">
-                <div className="card">
+                <div className="card single-instructors">
                     <img
                     src="https://images.pexels.com/photos/1065084/pexels-photo-1065084.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
                     className="card-img-top instructor-img img-rounded"
@@ -71,7 +71,7 @@ export default function aboutpeople() {
                 </div>
             </div>
             <div className="col-sm-3">
-                <div className="card">
+                <div className="card single-instructors">
                     <img
                     src="https://images.pexels.com/photos/736716/pexels-photo-736716.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
                     className="card-img-top instructor-img img-rounded"

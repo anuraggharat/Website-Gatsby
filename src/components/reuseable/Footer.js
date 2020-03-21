@@ -33,7 +33,7 @@ export default class Footer extends Component {
                                 <div className="container-fluid">
                                     <h2>Connect with us:</h2>                                    
                                 </div>
-                                <div className="container-fluid">
+                                <div className="container-fluid footer-social-media">
                                     <ul className="list-group list-group-horizontal social-media-list">
                                         <li className="list-group-item"><FaInstagram className="social-media-icon" /></li>
                                         <li className="list-group-item"><FaFacebook className="social-media-icon" /></li>
@@ -47,7 +47,7 @@ export default class Footer extends Component {
                     </div>
                     <div className="container-fluid credits text-center pt-5 pb-2 bg-dark"> 
                         <p className="text-white">
-                            Devloped by <Link to="https://github.com/anurag-gharat">Anurag_Gharat</Link> . All rights reserved 2020&copy;
+                            Devloped by <a href="https://github.com/anurag-gharat">Anurag_Gharat </a>. All rights reserved 2020&copy;
                         </p>
                     </div>
                 </footer>
