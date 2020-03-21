@@ -7,7 +7,7 @@ export default function Whyus() {
     return (
         <div className="container-fluid bg-light py-5">
             <Heading title="Why LearnCodeOnline.com? " />
-            <div className="d-flex flex-row justify-content-around pt-5 pb-2">
+            <div className="d-flex flex-row justify-content-around pt-5 pb-2 whycardcontainer">
                 <div className="card border-0 w-20 bg-white py-4 pl-4 pr-2 shadow-lg why-card"
                                 data-sal="zoom-in"
                                 data-sal-delay="800"
