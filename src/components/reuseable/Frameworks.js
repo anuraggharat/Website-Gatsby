@@ -5,7 +5,7 @@ export default class Frameworks extends Component {
     render() {
         return (
             <div className="container-fluid bg-light pb-5">
-                <h1 className="text-center text-bold mb-5 text-second">One stop location to learn all Web frameworks!</h1>
+                <h1 className="text-center text-bold mb-5 text-second sectionheading">One stop location to learn all Web frameworks!</h1>
                 <div className="container d-flex flex-row mx-auto bg-light justify-content-around framecardcontainer">
                     <div className="framecard d-flex flex-column shadow"
                                                     data-sal="fade"
