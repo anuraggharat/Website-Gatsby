@@ -273,4 +273,7 @@ nav{
         max-width:80% !important;
         margin: 20px auto;
     }
+    .course-name{
+        font-size: 1rem !important;
+    }
   }
