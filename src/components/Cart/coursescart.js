@@ -57,7 +57,7 @@ export default class coursescart extends Component {
                             
                         })}
                     </div>
-                    <div className="allcourses container-fluid row d-flex justify-content-around bg-dark">
+                    <div className="allcourses container-fluid row d-flex justify-content-around bg-light">
                     {this.state.choicecourses.map(({node})=>{
                         return(
                         <div className="col-5 mt-5 pt-4 pb-4 d-flex flex-column text-center bg-light single-course shadow-lg"                             
